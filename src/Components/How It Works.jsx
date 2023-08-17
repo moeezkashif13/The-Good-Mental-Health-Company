@@ -3,7 +3,7 @@ import { Heading } from "./General"
 export default function HowItWorks(){
     return (
 
-        <div className="py-16 space-y-12 bg-secondary">
+        <div className="allPaddings py-16 space-y-12 bg-secondary">
 
 
 <div className="text-center">

@@ -5,9 +5,9 @@ export default function Footer(){
 
     return(
 
-        <div className="bg-primary text-white" >
+        <div className="allPaddings bg-primary text-white" >
 
-        <div className="px-mobilePadding sm:px-secondMobilePadding md:px-tabletPadding lg:px-desktopPadding py-secondVerticalPadding space-y-14 text-sm ">
+        <div className="allPaddings py-secondVerticalPadding space-y-14 text-sm ">
 
 
 <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] ">
@@ -57,7 +57,7 @@ export default function Footer(){
 <div className="h-0.5 bg-[#FFBBA6] w-full mb-6"></div>
 
 
-<p className="px-mobilePadding sm:px-secondMobilePadding md:px-tabletPadding lg:px-desktopPadding text-sm">© 2023   |   The Good Mental Health Company</p>
+<p className="allPaddings text-sm">© 2023   |   The Good Mental Health Company</p>
 
 </div>
 

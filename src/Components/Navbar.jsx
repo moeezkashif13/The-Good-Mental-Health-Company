@@ -12,7 +12,7 @@ export default function Navbar(){
 
         <>
 
-        <div className="bg-secondary px-mobilePadding sm:px-secondMobilePadding md:px-tabletPadding lg:px-desktopPadding py-mobilePadding relative">
+        <div className="bg-secondary allPaddings py-mobilePadding relative">
 
 
 {/* CHECKKKKKK */}

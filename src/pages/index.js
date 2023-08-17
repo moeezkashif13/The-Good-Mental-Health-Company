@@ -24,6 +24,9 @@ export default function Home() {
 
 </Head>
 
+<div className="bg-secondary">
+
+
 <Navbar/>
 
 
@@ -45,6 +48,7 @@ export default function Home() {
 
 <Footer/>
 
+</div>
 
 </>
 

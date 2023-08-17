@@ -12,11 +12,7 @@ export default function HeroSect(){
 <div className="flex flex-col py-mobileVerticalPadding   
 
 
-px-mobilePadding
-
-sm:px-secondMobilePadding 
-md:px-tabletPadding
-lg:px-desktopPadding
+allPaddings
 
  space-y-8
   
@@ -74,7 +70,7 @@ anotherDesktop:h-[550px]
 
 
 
-<div className="bg-[#2F5560] text-white px-mobilePadding sm:px-secondMobilePadding md:px-tabletPadding lg:px-desktopPadding py-secondVerticalPadding  space-y-14 font-medium sm:flex sm:space-y-0 sm:gap-y-4 sm:flex-wrap lg:py-24 lg:text-xl"> 
+<div className="bg-[#2F5560] text-white allPaddings py-secondVerticalPadding  space-y-14 font-medium sm:flex sm:space-y-0 sm:gap-y-4 sm:flex-wrap lg:py-24 lg:text-xl"> 
 
 
 <div className="flex sm:w-1/2 lg:w-1/4 gap-x-5 lg:gap-x-3 items-center ">

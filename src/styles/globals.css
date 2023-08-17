@@ -184,7 +184,7 @@
 
 @layer utilities {
   .allPaddings {
-    @apply px-mobilePadding sm:px-secondMobilePadding md:px-tabletPadding lg:px-desktopPadding;
+    @apply px-mobilePadding sm:px-secondMobilePadding md:px-tabletPadding lg:px-desktopPadding max-w-[1600px] mx-auto   ;
   }
 }
 

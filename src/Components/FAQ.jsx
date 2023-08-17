@@ -67,7 +67,7 @@ export default function FAQ(){
 
     return (
 
-        <div className="py-mobileVerticalPadding px-mobilePadding sm:px-secondMobilePadding md:px-tabletPadding lg:px-desktopPadding space-y-8 bg-fourthbg text-white
+        <div className="py-mobileVerticalPadding allPaddings space-y-8 bg-fourthbg text-white
         
         
 

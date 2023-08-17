@@ -4,7 +4,7 @@ export default function Info(){
 
     return(
 
-    <div className="py-20 px-mobilePadding sm:px-secondMobilePadding md:px-tabletPadding lg:px-desktopPadding space-y-20 bg-secondary ">
+    <div className="py-20 allPaddings space-y-20 bg-secondary ">
 
 {/*  */}
 

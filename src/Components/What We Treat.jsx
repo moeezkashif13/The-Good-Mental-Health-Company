@@ -67,7 +67,7 @@ const parentElem = document.querySelectorAll('.parentElem')[index];
     return(
 
 
-        <div className="py-12 px-mobilePadding sm:px-secondMobilePadding md:px-tabletPadding lg:px-desktopPadding space-y-16 sm:space-y-20 bg-thirdbg
+        <div className="py-12 allPaddings space-y-16 sm:space-y-20 bg-thirdbg
         
 
         checking

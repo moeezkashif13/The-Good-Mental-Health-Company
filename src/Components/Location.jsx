@@ -2,7 +2,7 @@ export default function Location(){
 
     return(
 
-        <div className="md:flex">
+        <div className="md:flex allPaddings">
 
 <div className="md:w-1/2 md:h-[500px]">
 <div className="h-[430px] md:h-full w-full ">
