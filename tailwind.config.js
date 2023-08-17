@@ -5,7 +5,11 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/Components/**/*.{js,ts,jsx,tsx,mdx}',
+<<<<<<< HEAD
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+=======
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}', 
+>>>>>>> a25fd8bf8267e45f1358431675fbc18c7e5f8fca
   ],
   theme: {
 
