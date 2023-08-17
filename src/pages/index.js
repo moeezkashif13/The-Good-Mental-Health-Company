@@ -15,6 +15,15 @@ export default function Home() {
   return (
 <>
 
+<Head>
+
+<title>Affordable, high-quality therapy delivered with heart and soul</title>
+
+
+
+
+</Head>
+
 <Navbar/>
 
 

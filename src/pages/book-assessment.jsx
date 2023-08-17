@@ -1,6 +1,7 @@
 import Footer from "@/Components/Footer";
 import { Heading } from "@/Components/General";
 import Navbar from "@/Components/Navbar";
+import Head from "next/head";
 import Script from "next/script";
 
 export default function BookAssessment(){
@@ -9,6 +10,10 @@ export default function BookAssessment(){
     return (
 
         <>
+
+        <Head>
+            <title>Book An Assessment With The Good Mental Health Company</title>
+        </Head>
 
         <div>
             
@@ -36,7 +41,6 @@ export default function BookAssessment(){
 <div className="relative md:-top-12 h-[1020px] bookingForm:h-[700px]">
 
 <div className="calendly-inline-widget w-full h-full" data-url="https://calendly.com/moeezkashif13/portfolio-website?background_color=000000&text_color=91ff00&primary_color=91ff00" style={{minWidth:'320px'}}></div>
-
 
 
 </div>

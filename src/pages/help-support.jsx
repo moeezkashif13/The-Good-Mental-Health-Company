@@ -1,6 +1,7 @@
 import Footer from "@/Components/Footer";
 import { Heading } from "@/Components/General";
 import Navbar from "@/Components/Navbar";
+import Head from "next/head";
 
 const LocalHeading = ({text})=>{
     return <span className="inline-block font-semibold ">{text}</span>
@@ -10,6 +11,12 @@ export default function HelpSupport(){
 
 
     return(
+
+        <>
+        
+        <Head>
+            <title>Help & Support</title>
+        </Head>
 
 
         <div className="bg-secondary ">
@@ -65,6 +72,7 @@ export default function HelpSupport(){
 
         </div>
 
+        </>
 
 
     )

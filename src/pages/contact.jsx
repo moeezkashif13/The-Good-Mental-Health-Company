@@ -1,12 +1,20 @@
 import Footer from "@/Components/Footer";
 import { Heading } from "@/Components/General";
 import Navbar from "@/Components/Navbar";
+import Head from "next/head";
 
 export default function Contact(){
 
 
 
     return (
+
+<>
+<Head>
+            <title>Contact With Good Mental Health Company</title>
+        </Head>
+        
+        
 
         <div>
 
@@ -126,6 +134,7 @@ export default function Contact(){
 
         </div>
 
+        </>
 
 
     )
