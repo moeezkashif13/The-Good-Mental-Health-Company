@@ -40,7 +40,7 @@ anotherDesktop:h-[550px]
 
 ">
 
-<img src="https://images.squarespace-cdn.com/content/v1/5dd7c4c447849c0257aaa47a/9923a97f-fc81-46e1-abfb-0b8fe21e1339/Head_chakra_shadows.png?format=750w" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
+<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434135/The%20Good%20Mental%20Health%20Company/qoimhkcw6gw955nkncdg.webp" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
 
 
 </div>

@@ -18,7 +18,7 @@ export default function LeadershipTeam(){
 
 <div className="w-full h-[380px] md:h-[270px] lg:h-[350px]">
 
-<img src="https://images.squarespace-cdn.com/content/v1/5dd7c4c447849c0257aaa47a/812c5c0f-3109-43ca-9897-0f84f9ee2525/PHOTO-2023-03-22-16-38-58.jpg?format=300w" className="w-full max-w-full h-full object-contain " alt="" />
+<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434357/The%20Good%20Mental%20Health%20Company/wze94nox2rm9q860nktb.webp" className="w-full max-w-full h-full object-contain " alt="" />
 
 
 </div>

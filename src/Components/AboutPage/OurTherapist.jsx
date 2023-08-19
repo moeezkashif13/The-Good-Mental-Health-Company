@@ -21,7 +21,7 @@ lg:w-[42vw] lg:h-[42vw]
 ">
 
 
-<img src="https://images.squarespace-cdn.com/content/v1/5dd7c4c447849c0257aaa47a/1b02f546-1a5c-4026-9b3e-cefff91b2f67/Placements_chairs_02.png?format=750w" className="w-full max-w-full h-full object-contain " alt="" />
+<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434399/The%20Good%20Mental%20Health%20Company/ozoeltauenkqcqatsqjr.webp" className="w-full max-w-full h-full object-contain " alt="" />
 
 
 

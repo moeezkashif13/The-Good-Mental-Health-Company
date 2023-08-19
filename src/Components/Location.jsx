@@ -6,7 +6,7 @@ export default function Location(){
 
 <div className="md:w-1/2 md:h-[500px]">
 <div className="h-[430px] md:h-full w-full ">
-    <img src="https://images.squarespace-cdn.com/content/v1/5dd7c4c447849c0257aaa47a/af33cd16-e2f4-4059-b88a-7710e9d6ad5c/TGMHCo_TherapyRoom.jpg?format=1500w" className="w-full h-full max-w-full object-cover" alt="" />
+    <img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434181/The%20Good%20Mental%20Health%20Company/f1wn7ucwiu2yfejbes47.webp" className="w-full h-full max-w-full object-cover" alt="" />
 </div>
 </div>
 

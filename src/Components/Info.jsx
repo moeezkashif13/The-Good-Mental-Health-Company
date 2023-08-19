@@ -13,7 +13,7 @@ export default function Info(){
 <div className="md:w-1/2">
 <div className="w-[225px] h-[270px] sm:w-[250px] sm:h-[300px] lg:w-[430px] lg:h-[450px] mx-auto">
 
-<img src="https://images.squarespace-cdn.com/content/v1/5dd7c4c447849c0257aaa47a/e4439dfe-b66e-4cf2-ac90-013c864b9499/mandala_01.png?format=750w" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
+<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434152/The%20Good%20Mental%20Health%20Company/dvgpvxborfk8ivtyxppd.webp" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
 
 </div>
 
@@ -40,7 +40,7 @@ export default function Info(){
 <div className="md:w-1/2">
 <div className="w-[225px] h-[270px] sm:w-[250px] sm:h-[300px] lg:w-[430px] lg:h-[450px] mx-auto">
 
-<img src="https://images.squarespace-cdn.com/content/v1/5dd7c4c447849c0257aaa47a/e4439dfe-b66e-4cf2-ac90-013c864b9499/mandala_01.png?format=750w" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
+<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434152/The%20Good%20Mental%20Health%20Company/dvgpvxborfk8ivtyxppd.webp" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
 
 </div>
 
@@ -66,7 +66,7 @@ export default function Info(){
 <div className="md:w-1/2">
 <div className="w-[225px] h-[270px] sm:w-[250px] sm:h-[300px] lg:w-[430px] lg:h-[450px] mx-auto">
 
-<img src="https://images.squarespace-cdn.com/content/v1/5dd7c4c447849c0257aaa47a/e4439dfe-b66e-4cf2-ac90-013c864b9499/mandala_01.png?format=750w" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
+<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434152/The%20Good%20Mental%20Health%20Company/dvgpvxborfk8ivtyxppd.webp" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
 
 </div>
 
