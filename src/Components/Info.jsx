@@ -13,7 +13,7 @@ export default function Info(){
 <div className="md:w-1/2">
 <div className="w-[225px] h-[270px] sm:w-[250px] sm:h-[300px] lg:w-[430px] lg:h-[450px] mx-auto">
 
-<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434152/The%20Good%20Mental%20Health%20Company/dvgpvxborfk8ivtyxppd.webp" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
+<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434152/The%20Good%20Mental%20Health%20Company/dvgpvxborfk8ivtyxppd.webp" className="w-full h-full max-w-full object-contain" alt="" />
 
 </div>
 
@@ -40,7 +40,7 @@ export default function Info(){
 <div className="md:w-1/2">
 <div className="w-[225px] h-[270px] sm:w-[250px] sm:h-[300px] lg:w-[430px] lg:h-[450px] mx-auto">
 
-<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434152/The%20Good%20Mental%20Health%20Company/dvgpvxborfk8ivtyxppd.webp" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
+<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434152/The%20Good%20Mental%20Health%20Company/dvgpvxborfk8ivtyxppd.webp" className="w-full h-full max-w-full object-contain" alt="" />
 
 </div>
 
@@ -66,7 +66,7 @@ export default function Info(){
 <div className="md:w-1/2">
 <div className="w-[225px] h-[270px] sm:w-[250px] sm:h-[300px] lg:w-[430px] lg:h-[450px] mx-auto">
 
-<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434152/The%20Good%20Mental%20Health%20Company/dvgpvxborfk8ivtyxppd.webp" className="w-full h-full max-w-full object-cover lg:object-contain" alt="" />
+<img src="https://res.cloudinary.com/dtcwpaba5/image/upload/v1692434152/The%20Good%20Mental%20Health%20Company/dvgpvxborfk8ivtyxppd.webp" className="w-full h-full max-w-full object-contain" alt="" />
 
 </div>
 
