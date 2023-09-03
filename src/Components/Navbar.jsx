@@ -56,7 +56,7 @@ ${showMenu?'top-0 visible':'-top-[150%] invisible'}
 <Link href="contact">Contact</Link>
 
 <Link href='/book-assessment'  className='pt-8 mx-auto text-lg'>
-    <BookButton/>
+    <BookButton noLink />
 </Link>
 
 
@@ -94,7 +94,7 @@ ${showMenu?'top-0 visible':'-top-[150%] invisible'}
 <Link href="contact">Contact</Link>
 
 <Link href='/book-assessment'  className='text-sm pt-4'>
-<BookButton   />
+<BookButton noLink   />
 </Link>
 
 

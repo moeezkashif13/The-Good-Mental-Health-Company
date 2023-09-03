@@ -10,10 +10,17 @@ export const Heading = ({text,small,color,herosectHeading})=>{
 }
 
 
-export const BookButton = ()=>{
+export const BookButton = ({noLink})=>{
     return <div className="pb-4">
     
+{noLink?     <div   className="bg-primary text-white px-8 py-4 rounded-[60px] inline">Book an assessment</div>
+
+
+:
     <Link href="/book-assessment"  className="bg-primary text-white px-8 py-4 rounded-[60px] inline">Book an assessment</Link>
+
+    }
+
     
     </div>
 }
