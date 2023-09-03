@@ -2,9 +2,82 @@ import Footer from "@/Components/Footer";
 import { Heading } from "@/Components/General";
 import Navbar from "@/Components/Navbar";
 import Head from "next/head";
+import { useForm } from "react-hook-form";
+
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+import axios from "axios";
+import { useState } from "react";
+
+const phoneRegExp = /^[0-9]{10}$/; // Adjust the regular expression based on your phone number format
+
+
+const schema = yup.object({
+    firstName: yup.string().required('First Name is required'),
+    lastName: yup.string().required('Last Name is required'),
+    email: yup.string().email('Email is required').required('Email is required'),
+    
+    phoneNumber: yup.string()
+    .matches(phoneRegExp, 'Phone number is not valid')
+    .required('Phone number is required'),
+
+    
+    message: yup.string().required('Message is required'),
+
+    // firstName: yup.string(),
+    // lastName: yup.string(),
+    // email: yup.string().email('Email is required'),
+    
+    // phoneNumber: yup.string(),
+    // .matches(phoneRegExp, 'Phone number is not valid'),
+    // .required('Phone number is required'),
+
+    
+    // message: yup.string(),
+
+
+  }).required();
+  
 
 export default function Contact(){
 
+    const { register, handleSubmit, watch, formState: { errors } } = useForm({
+
+        resolver: yupResolver(schema),
+        mode:"onChange"
+
+
+    });
+
+
+const [sendingLoader,setSendingLoader] = useState(false)
+
+const [details,setDetails] = useState({});
+
+    const onSubmit =  async data=>{
+console.log(data);
+        setSendingLoader(true)
+
+        // setTimeout(() => {
+        //     setSendingLoader(false)
+        // }, 1000);
+        
+        axios.post('/api/sendemail',{
+...data
+        }).then(resp=>{
+
+            
+        setSendingLoader(false)
+        setDetails(resp.data)
+            
+        }).catch(err=>{
+            setSendingLoader(false)
+            setDetails(err.response.data)
+        })
+
+
+    };
+  
 
 
     return (
@@ -19,6 +92,17 @@ export default function Contact(){
         <div>
 
 
+
+{sendingLoader && <div className="fixed top-0 z-20 w-full h-full bg-[rgba(0,0,0,0.8)] flex justify-center items-center">
+
+<span class="loader"></span>
+
+
+</div>
+
+}
+
+
 <Navbar/>
 
 
@@ -26,23 +110,28 @@ export default function Contact(){
 
 
 
-<div className="md:w-1/2 space-y-8">
+<div className="md:w-1/2 space-y-5">
 
 
 <Heading text="Contact Us" />
 
 
-<div className="flex flex-wrap justify-between gap-y-6">
+<div >
 
 
 {/*  */}
+
+<form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-wrap justify-between gap-y-4">
+
 
 <div className="space-y-2 text-sm w-[calc(50%-7px)]">
 
     <p>First Name</p>
     
-    <input type="text" className="w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" name="" id="" />
+    <input {...register("firstName")} type="text" className="w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" />
     
+    <p className="text-red-500 font-medium">{errors.firstName?.message}</p>
+
     </div>
 
 {/*  */}
@@ -51,8 +140,11 @@ export default function Contact(){
 
     <p>Last Name</p>
     
-    <input type="text" className="w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" name="" id="" />
+    <input {...register("lastName")} type="text" className="w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" />
     
+    <p className="text-red-500 font-medium">{errors.lastName?.message}</p>
+
+
     </div>
 
 
@@ -62,8 +154,11 @@ export default function Contact(){
 
     <p>Email</p>
     
-    <input type="text" className="w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" name="" id="" />
+    <input {...register('email')} type="text" className="w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" />
     
+    <p className="text-red-500 font-medium">{errors.email?.message}</p>
+
+
     </div>
 
 {/*  */}
@@ -73,8 +168,11 @@ export default function Contact(){
 
     <p>Phone Number</p>
     
-    <input type="text" className="w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" name="" id="" />
+    <input {...register('phoneNumber')} type="text" className="w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" />
     
+    <p className="text-red-500 font-medium">{errors.phoneNumber?.message}</p>
+
+
     </div>
 
 
@@ -85,21 +183,34 @@ export default function Contact(){
 
     <p>Message</p>
     
-    <textarea rows={8} className="resize-none w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" name="" id="" />
+    <textarea {...register('message')} rows={10} className="resize-none w-full outline-none bg-[#FAF8F7] border-primary border px-3 py-2" />
     
+    <p className="text-red-500 font-medium">{errors.message?.message}</p>
+
+
     </div>
 
 
 {/*  */}
 
-<div className="px-6 py-4 text-white rounded-[55px] bg-primary font-semibold">Send Message</div>
+<input value="Send Message" type="submit"  className="cursor-pointer px-6 py-4 text-white rounded-[55px] bg-primary font-semibold" />
 
+
+
+
+</form>
 
 
 
 
 </div>
 
+<p className={` font-semibold ${details.sent?'text-green-500':'text-red-500'} `}>
+
+{details.message}
+
+
+</p>
 
 
 </div>
