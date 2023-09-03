@@ -7,7 +7,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const phoneRegExp = /^[0-9]{10}$/; // Adjust the regular expression based on your phone number format
 
@@ -77,6 +82,45 @@ console.log(data);
 
 
     };
+
+
+    useEffect(()=>{
+
+
+        if(details.sent){
+
+            toast.success(details.message,{
+                position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+            theme: "dark",
+            
+            })
+
+        }else{
+
+            toast.error(details.message,{
+                position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+            theme: "dark",
+            
+            })
+
+        }
+
+        
+
+
+    },[details.sent])
   
 
 
@@ -104,6 +148,9 @@ console.log(data);
 
 
 <Navbar/>
+
+
+
 
 
 <div className="allPaddings py-12 space-y-16 bg-secondary text-textone md:flex md:space-y-0 md:gap-x-12">
@@ -205,12 +252,12 @@ console.log(data);
 
 </div>
 
-<p className={` font-semibold ${details.sent?'text-green-500':'text-red-500'} `}>
+{/* <p className={` font-semibold ${details.sent?'text-green-500':'text-red-500'} `}>
 
 {details.message}
 
 
-</p>
+</p> */}
 
 
 </div>
